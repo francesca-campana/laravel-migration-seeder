@@ -20,7 +20,7 @@ class CreateComicsTable extends Migration
             $table->string('illustrator');
             $table->string('genre');
             $table->integer('pages');
-            $table->boolean('color');
+            $table->string('color');
             $table->text('description');
             $table->timestamps();
         });

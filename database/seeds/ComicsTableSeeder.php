@@ -20,7 +20,7 @@ class ComicsTableSeeder extends Seeder
           $new_comic->illustrator = $faker->name;
           $new_comic->genre = $faker->randomElement(['Action', 'Graphic Novel', 'Fantasy', 'Superhero']);
           $new_comic->pages = $faker->numberBetween(100, 400);
-          $new_comic->color = $faker->boolean($chanceOfGettingTrue = 'color');
+          $new_comic->color = $faker->randomElement(['color', 'b/n']);
           $new_comic->description = $faker->paragraph();
           $new_comic->save();
         }
